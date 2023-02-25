@@ -1,0 +1,71 @@
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    margin-top: 0%;
+}
+
+body {
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+}
+
+.game-board {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    /* border: 6px solid black; */
+    /* border-top: none; */
+
+    border-radius: 10px;
+
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.game-board>div {
+    /* border: 6px solid teal; */
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+
+    /* border-top: none; */
+    /* border-bottom: none; */
+    border-radius: 2px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.New-Game,
+.Give-Up {
+    font-size: 1.3em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #0a0027;
+    color: #ffffff;
+    border: none;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.Give-Up {
+    /* font-size: 2em; */
+    margin-left: 130px;
+}
+
+.New-Game {
+    /* font-size: 2em; */
+    margin-right: 130px;
+}
